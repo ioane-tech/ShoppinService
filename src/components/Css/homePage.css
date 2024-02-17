@@ -1,0 +1,111 @@
+/***********home page***********/
+
+
+
+.poster_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(60, 60, 60);
+    background-color: rgb(246, 246, 246);
+    width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border:2px solid gray;
+    border-radius: 5px;
+}
+.poster_div >h1{
+    font-size: 46px;
+    text-align: left;
+    font-family :comic Sans MS, Comic Sans, cursive ;
+    color: rgb(255, 86, 86);
+
+    margin-left: 70px;
+}
+
+.poster_text_div{
+    text-align: center;
+    margin-top: -50px;
+    height: 100%;
+    width: 30%;
+}
+.button_1{
+    font-size: 15px;
+    width: 130px;
+    height: 50px;
+    margin-right: 20px;
+
+    color: rgb(254, 254, 254);
+    background-color:rgb(255, 51, 0) ;
+    border: 2px solid rgb(255, 51, 0);
+    border-radius: 5px;
+    box-shadow:  0 1px 4px rgba(0, 0, 0,0.7);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button_1:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 51, 0) ;
+    box-shadow:  0 0 0 rgb(0, 0, 0);
+    filter: drop-shadow( 5px 5px 7px rgb(89, 89, 89));
+    transition: 0.3s;
+}
+.button_2{
+    font-size: 15px;
+    width: 130px;
+    height: 50px;
+    
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(0, 132, 255);
+    border: 2px solid rgb(0, 132, 255);
+    border-radius: 5px;
+    box-shadow:  0 1px 4px rgba(0, 0, 0,0.7);
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button_2:hover{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 132, 255);
+    box-shadow:  0 0 0 rgb(0, 0, 0);
+    filter: drop-shadow( 2px 5px 7px rgb(89, 89, 89));
+    transition: 0.3s;
+}
+
+.poster_image_man{
+    margin-left: 40px;
+    margin-right: 100px;
+    height:360px;
+}
+.poster_image_tech{
+    width: 380px;
+    height: 260px;
+    margin-left: 30px;
+    margin-right: -50px;
+}
+
+.common_header_text{
+    text-align: center;
+    margin-top: 130px;
+    color: rgb(119, 119, 119);
+    font-size:40px;
+}
+.popup_div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 20px;
+    width: 700px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid gray;
+    border-radius: 12px;
+
+}
