@@ -54,6 +54,8 @@
     filter: drop-shadow( 5px 5px 7px rgb(89, 89, 89));
     transition: 0.3s;
 }
+
+
 .button_2{
     font-size: 15px;
     width: 130px;
@@ -76,6 +78,8 @@
     filter: drop-shadow( 2px 5px 7px rgb(89, 89, 89));
     transition: 0.3s;
 }
+
+
 
 .poster_image_man{
     margin-left: 40px;
@@ -109,3 +113,4 @@
     border-radius: 12px;
 
 }
+

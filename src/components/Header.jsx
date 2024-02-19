@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 import {useCart} from "../context/CartContext"
 
+
+import './Css/header.css'
 function Header({ storeData }) {
   const [searchOn,setSearcOn]=useState(false)
   const [showMenu,setShowMenu]=useState(false)
@@ -59,7 +61,7 @@ const navigatorRoute="http://localhost:3000/"
               }} 
               className="search_input" 
               type="text" 
-              placeholder="Dont use this search. see menu to see our product and navigate to themy"
+              placeholder="Dont use this search. see menu to see our product and navigate to them"
             />
             <FaSearch onClick={searchHandler} className='search_icon'/>
 

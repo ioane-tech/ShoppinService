@@ -6,6 +6,7 @@ import Header from './Header';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import './Css/myOrders.css'
 const MyOrders = () => {
   const { cartItems, removeFromCart } = useCart();
   const [totalPrice, setTotalPrice] = useState(0);
@@ -79,7 +80,7 @@ const MyOrders = () => {
                       alt={item.title}
                     />
                     <div className='orders_text_side_div'>
-                      <h2>{item.title}</h2>
+                      <h2 style={{textAlign:'left'}}>{item.title}</h2>
                       <h4 style={{ color: 'red' }}>Price: ${calculateItemPrice(item)}</h4>
                       <h4>Review: ⭐{item.rating.rate}</h4>
                       <div>

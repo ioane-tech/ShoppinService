@@ -9,7 +9,14 @@ import { useCart } from '../context/CartContext';
 import Footer from './Footer';
 import { useSearchParams } from 'react-router-dom';
 
+
+import './Css/homePage.css'
+import './Css/items.css'
 function HomePage() {
+  const [contactPopup,setContactPopup]=useState(false)
+
+
+
 const [storeData,setStoreData]=useState()
 
 const { cartItems, addToCart } = useCart();
@@ -109,8 +116,6 @@ const addToCartHandler=(item)=>{
         <div className='poster_text_div'>
           <h1 style={{fontSize:'55px'}}>Hurry UP</h1>
           <h4 style={{fontSize:'35px'}}>Buy Now</h4>
-          <button className='button_1'>Go To Offers</button>
-          <button className='button_2'>Contact Us</button>
         </div>
         <img className='poster_image_tech' src='posterImageTech.png'/>
       </div>
@@ -183,20 +188,20 @@ const addToCartHandler=(item)=>{
                 src={detailedData.image}
               />
               <div className='orders_text_side_div'>
-                <h2>{detailedData.title}</h2>
+                <h2 style={{textAlign:'left',fontFamily:'sans-serif'}}>{detailedData.title}</h2>
                 {/* <h4>Quantity: {itemQuantity} <span onClick={()=>setItemQuantity(itemQuantity+1)}>+</span></h4> */}
-                <h4 style={{ color: 'red' }}>Price: ${detailedData.price}</h4>
-                <h4>Review: ⭐{detailedData.rating.rate}</h4>
+                <h4 style={{ color: 'red',textAlign:'left',fontFamily:'sans-serif'}}>Price: ${detailedData.price}</h4>
+                <p style={{textAlign:'left',fontFamily:'sans-serif'}}>Review: ⭐{detailedData.rating.rate}</p>
               </div>
             </div>
 
-            <h3>About this product</h3>
+            <h3 style={{fontFamily:'sans-serif'}}>About this product</h3>
             <p style={{ textAlign: 'left', marginLeft: '20px', marginRight: '20px' }}>{detailedData.description}</p>
           </div>
         </div>
       }
 
-      <Footer/>
+      <Footer id="footer"/>
     </div>
   )
 }

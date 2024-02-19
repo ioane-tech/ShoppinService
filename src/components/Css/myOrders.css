@@ -18,8 +18,8 @@
 .orders_text_side_div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 
     width: 550px;
     padding: 20px;

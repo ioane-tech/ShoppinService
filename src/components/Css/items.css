@@ -11,11 +11,14 @@
     width: 1300px;
 }
 .each_item_div{
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(121, 121, 121);
     border-radius: 8px;
     width: 340px;
+    min-height: 350px;
+
     margin-bottom: 20px;
     margin-top: 10px;
+    padding: 10px;
     transition: 0.5s;
 }
 .each_item_div:hover{
@@ -52,10 +55,11 @@
 
     color: rgb(85, 85, 85);
     cursor: pointer;
+    text-decoration: underline rgb(182, 182, 182);
     transition: 0.6s;
 }
 .item_detail:hover{
-    text-decoration: underline;
+    text-decoration: underline rgb(0, 0, 0);
     transition: 0.6s;
 }
 .item_devider_hr{
